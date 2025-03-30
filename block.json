@@ -1,0 +1,51 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/double-picture-block",
+	"version": "0.1.0",
+	"title": "Double Picture Block",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"attributes": {
+		"leftImage": {
+			"type": "string",
+			"default": ""
+		},
+		"rightImage": {
+			"type": "string",
+			"default": ""
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"padding": {
+			"type": "object",
+			"default": {
+				"top": 0,
+				"bottom": 0,
+				"left": 0,
+				"right": 0
+			}
+		},
+		"margin": {
+			"type": "object",
+			"default": {
+				"top": 0,
+				"bottom": 0,
+				"left": 0,
+				"right": 0
+			}
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "double-picture-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php"
+}

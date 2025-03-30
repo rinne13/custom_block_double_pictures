@@ -1,0 +1,67 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-double-picture-block {
+	background-color: white;
+	color: black;
+	padding: 2px;
+}
+.double-picture-block .image-container {
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+.double-picture-block {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}
+
+.image-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.left-image {
+	position: absolute;
+	left: 50px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 60%;
+	height: 70%;
+	object-fit: cover;
+	z-index: 2;
+}
+
+.right-image {
+	position: absolute;
+	right: 0;
+	width: 60%;
+	height: 100%;
+	object-fit: cover;
+	z-index: 1;
+}
+
+.left-image-placeholder,
+.right-image-placeholder {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-grow: 1;
+}
+.right-image-placeholder {
+	justify-content: flex-end;
+}
+.right-image-placeholder span {
+	text-align: right;
+}
