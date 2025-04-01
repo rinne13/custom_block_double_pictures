@@ -65,3 +65,9 @@
 .right-image-placeholder span {
 	text-align: right;
 }
+
+@media (max-width: 768px) {
+	.double-picture-block {
+		height: 420px;
+	}
+}
